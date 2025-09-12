@@ -1,0 +1,10 @@
+POST /products → insert
+
+GET /products → read all
+
+GET /products/:id → read one
+
+PUT /products/:id → update
+
+DELETE /products/:id → delete
+
