@@ -33,7 +33,7 @@ const AddProduct = ({ setProducts }) => {
         setImageUrl('');
         setDescription('');
         
-        // After adding a new product, fetch the updated list
+        
         fetchProducts();
       })
       .catch((error) => {
@@ -45,7 +45,7 @@ const AddProduct = ({ setProducts }) => {
     fetch('http://localhost:5000/products')
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data);  // Update the product list in the parent component
+        setProducts(data);  
       });
   };
 

@@ -10,7 +10,6 @@ const productSchema = new mongoose.Schema({
   seller: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 }, { timestamps: true });
 
-//timestamps is used us to show the the date along with time when the for ex the product is created
 
 const Product = mongoose.model('Product', productSchema);
 
